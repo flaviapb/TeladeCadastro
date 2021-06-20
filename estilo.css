@@ -14,6 +14,15 @@ body{
     font-weight: 750px;
     display: flex;
     align-items: center;
+    min-height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 h1{
@@ -24,26 +33,52 @@ h1{
     font-size: 3em;
 }
 
-
-main .social-media{
-    align-items: center;
-    display: inline-block;  
+.social-media{
+    display: flex;
+    align-content: center;
 }
 
-.social-media img{
-    width: 40px;
+.social-media img {
+    width: 35px;
+    margin-left: 50px;   
 }
 
-.social-media a:nth-child(1){
-    margin-left: 200px;
+.social-media a:nth-child(1) img{
+    margin-left:0;
 }
 
-.social-media a:nth-child(2){
-    margin-right: 50px;
-    margin-left: 50px;
+.alternativa{
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
+
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+form label span{
+    margin-top:20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+form input{
+    width: 300px;
+    height: 50px;
+    background-color:#101c2c;
+    padding: 0 0.5em;
+    outline: #181f29;
+    color: whitesmoke;
+    font-size:17px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+
